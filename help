@@ -1,0 +1,71 @@
+package imamu.ccis.cs.cs140.tutorials.tutorial03;
+
+import java.util.Scanner;
+
+public class Exercise01 
+{
+    public static void main(String[] argv)
+    {
+        // declare a scanner to input numbers
+        Scanner input = new Scanner(System.in);
+        
+        // declare 5 real variables  
+        double number1, number2, number3, number4, number5;
+        
+        // declare 3 counter variablesto count (1) negative numbers, 
+        // (2) positive numbers, and (3) zeros
+        int countNegatives, countPositives, countZeros;
+        
+        //initialize the counters to zero
+        countNegatives = countPositives = countZeros = 0;
+        
+        // prompt the user to enter 5 real numbers
+        System.out.println("Enter five real numbers: ");
+        number1 = input.nextDouble();
+        number2 = input.nextDouble();
+        number3 = input.nextDouble();
+        number4 = input.nextDouble();
+        number5 = input.nextDouble();
+        
+        // test the number1 value and increment the correponding counter 
+        if ( number1 > 0 )
+            countPositives++;
+        else if ( number1 < 0 )
+            countNegatives++;
+        else
+            countZeros++;
+        
+        // test the number2 value and increment the correponding counter 
+        if ( number2 > 0 )
+            countPositives++;
+        else if ( number2 < 0 )
+            countNegatives++;
+        else
+            countZeros++;
+        // test the number3 value and increment the correponding counter 
+        if ( number3 > 0 )
+            countPositives++;
+        else if ( number3 < 0 )
+            countNegatives++;
+        else
+            countZeros++;
+        
+        // test the number4 value and increment the correponding counter 
+        if ( number4 > 0 )
+            countPositives++;
+        else if ( number4 < 0 )
+            countNegatives++;
+        else
+            countZeros++;
+        
+        // test the number5 value and increment the correponding counter 
+        if ( number5 > 0 )
+            countPositives++;
+        else if ( number5 < 0 )
+            countNegatives++;
+        else
+            countZeros++;
+        
+        System.out.printf("No of negative numbers: %d\nNo of positive numbers: %d\nNo of zeros: %d\n", countNegatives, countPositives, countZeros);
+    }
+}
